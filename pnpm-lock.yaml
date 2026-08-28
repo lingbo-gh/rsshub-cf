@@ -51,10 +51,10 @@ importers:
         version: 6.16.0
       '@hono/node-server':
         specifier: 2.1.1
-        version: 2.1.1(hono@4.13.2)
+        version: 2.1.1(hono@4.13.4)
       '@hono/zod-openapi':
         specifier: 1.6.0
-        version: 1.6.0(hono@4.13.2)(zod@4.4.3)
+        version: 1.6.0(hono@4.13.4)(zod@4.4.3)
       '@jocmp/mercury-parser':
         specifier: 3.1.0
         version: 3.1.0
@@ -87,7 +87,7 @@ importers:
         version: 0.0.25
       '@scalar/hono-api-reference':
         specifier: 0.11.14
-        version: 0.11.14(hono@4.13.2)
+        version: 0.11.14(hono@4.13.4)
       '@sentry/node':
         specifier: 10.70.0
         version: 10.70.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.221.0(@opentelemetry/api@1.9.1))
@@ -131,8 +131,8 @@ importers:
         specifier: 2.1.88
         version: 2.1.88
       hono:
-        specifier: 4.13.2
-        version: 4.13.2
+        specifier: 4.13.4
+        version: 4.13.4
       html-to-text:
         specifier: 10.0.0
         version: 10.0.0
@@ -4303,8 +4303,8 @@ packages:
   hmacsha1@1.0.0:
     resolution: {integrity: sha512-4FP6J0oI8jqb6gLLl9tSwVdosWJ/AKSGJ+HwYf6Ixe4MUcEkst4uWzpVQrNOCin0fzTRQbXV8ePheU8WiiDYBw==}
 
-  hono@4.13.2:
-    resolution: {integrity: sha512-JydRilDRkYBQMt9qR9U92mXxmbGqsqSn/IKOrh4e7/gEbn+0zSr8igTu0obwJoNGN4sez28DIql7FBHWydoJpA==}
+  hono@4.13.4:
+    resolution: {integrity: sha512-AGEwKIyRMHRv1t8Wjwa3LHxQ61X5CqrdFT+4BRNTpqS5aJNnpl5WLjADb7vFlJzI/8uK7T5QLVApCMQKNa3LgQ==}
     engines: {node: '>=16.9.0'}
 
   hookable@6.1.1:
@@ -5370,6 +5370,10 @@ packages:
 
   picomatch@4.0.5:
     resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
+    engines: {node: '>=12'}
+
+  picomatch@4.0.7:
+    resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
     engines: {node: '>=12'}
 
   pino-abstract-transport@3.0.0:
@@ -7074,21 +7078,21 @@ snapshots:
       '@types/aws-lambda': 8.10.162
       '@types/express': 5.0.6
 
-  '@hono/node-server@2.1.1(hono@4.13.2)':
+  '@hono/node-server@2.1.1(hono@4.13.4)':
     dependencies:
-      hono: 4.13.2
+      hono: 4.13.4
 
-  '@hono/zod-openapi@1.6.0(hono@4.13.2)(zod@4.4.3)':
+  '@hono/zod-openapi@1.6.0(hono@4.13.4)(zod@4.4.3)':
     dependencies:
       '@asteasolutions/zod-to-openapi': 9.1.0(zod@4.4.3)
-      '@hono/zod-validator': 0.9.0(hono@4.13.2)(zod@4.4.3)
-      hono: 4.13.2
+      '@hono/zod-validator': 0.9.0(hono@4.13.4)(zod@4.4.3)
+      hono: 4.13.4
       openapi3-ts: 4.6.1
       zod: 4.4.3
 
-  '@hono/zod-validator@0.9.0(hono@4.13.2)(zod@4.4.3)':
+  '@hono/zod-validator@0.9.0(hono@4.13.4)(zod@4.4.3)':
     dependencies:
-      hono: 4.13.2
+      hono: 4.13.4
       zod: 4.4.3
 
   '@humanfs/core@0.19.2':
@@ -8049,10 +8053,10 @@ snapshots:
 
   '@scalar/helpers@0.10.0': {}
 
-  '@scalar/hono-api-reference@0.11.14(hono@4.13.2)':
+  '@scalar/hono-api-reference@0.11.14(hono@4.13.4)':
     dependencies:
       '@scalar/client-side-rendering': 0.3.7
-      hono: 4.13.2
+      hono: 4.13.4
 
   '@scalar/schemas@0.8.1':
     dependencies:
@@ -9528,6 +9532,10 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.5
 
+  fdir@6.5.0(picomatch@4.0.7):
+    optionalDependencies:
+      picomatch: 4.0.7
+
   fecha@4.2.3: {}
 
   fetch-blob@3.2.0:
@@ -9772,7 +9780,7 @@ snapshots:
 
   hmacsha1@1.0.0: {}
 
-  hono@4.13.2: {}
+  hono@4.13.4: {}
 
   hookable@6.1.1: {}
 
@@ -11093,6 +11101,8 @@ snapshots:
 
   picomatch@4.0.5: {}
 
+  picomatch@4.0.7: {}
+
   pino-abstract-transport@3.0.0:
     dependencies:
       split2: 4.2.0
@@ -12008,8 +12018,8 @@ snapshots:
   vite@7.3.1(@types/node@26.2.0)(lightningcss@1.32.0)(tsx@4.23.12)(yaml@2.9.0):
     dependencies:
       esbuild: 0.27.7
-      fdir: 6.5.0(picomatch@4.0.5)
-      picomatch: 4.0.5
+      fdir: 6.5.0(picomatch@4.0.7)
+      picomatch: 4.0.7
       postcss: 8.5.26
       rollup: 4.62.5
       tinyglobby: 0.2.17
